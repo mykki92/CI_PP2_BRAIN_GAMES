@@ -75,3 +75,22 @@ a {
 .card-front {
     transform: rotatex(180deg);
 }
+
+/*Restart*/
+#reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reset-board {
+    height: 25px;
+    width: 200px;
+    border: none;
+    background-color: #fff;
+    font-family: "Righteous", cursive;
+    font-size: 120%;
+}
+#reset-board:hover {
+    background-color: #000;
+    color: #fff;
+}
