@@ -20,3 +20,13 @@ function flipCard () {
 
    checkForMatch();
 }
+
+//check for matching cards referencing their data frameworks
+function checkForMatch() {
+    if (firstCard.dataset.framework === secondCard.dataset.framework) {
+      disableCards();
+      return;
+    }
+ 
+    unflipCards();
+ }
