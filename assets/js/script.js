@@ -55,3 +55,11 @@ function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
+
+//shuffles card positions
+(function shuffle() {
+    cards.forEach(card => {
+      let ramdomPos = Math.floor(Math.random() * 12);
+      card.style.order = ramdomPos;
+    });
+  })();
