@@ -63,3 +63,5 @@ function resetBoard() {
       card.style.order = ramdomPos;
     });
   })();
+
+cards.forEach(card => card.addEventListener('click', flipCard));
