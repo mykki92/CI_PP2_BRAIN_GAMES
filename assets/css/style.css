@@ -1,6 +1,7 @@
 body {
     background-color: #fff;
     font-family: "Righteous", cursive;
+    margin: 0px;
 }
 
 /*Page header with nav bar*/
@@ -17,7 +18,8 @@ body {
 #navbar li {
     float: right;
     list-style-type: none;
-    margin-right: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
     font-size: 140%;
 }
 a {
@@ -31,7 +33,11 @@ a {
     border-bottom: 3px solid #fff;
 }
 
-/*game area*/
+/*Game area*/
+#game-area {
+    width: 100%;
+    position: absolute;
+}
 .game-container {
     width: 640px;
     height: 490px;
@@ -42,7 +48,7 @@ a {
     perspective: 1000px;
 }
 
-/*cards*/
+/*Game cards*/
 .game-card {
     height: 150px;
     width: 150px;

@@ -65,3 +65,11 @@ function resetBoard() {
   })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+//Reset button
+document.querySelector("#reset-board").addEventListener("click", () => {
+
+  cards.forEach(card => {
+      card.classList.remove("flip");
+  })
+});
