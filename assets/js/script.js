@@ -49,4 +49,9 @@ function unflipCards() {
      resetBoard();
    }, 1500);
 }
- 
+
+//resets the variables after each turn
+function resetBoard() {
+    [hasFlippedCard, lockBoard] = [false, false];
+    [firstCard, secondCard] = [null, null];
+}
