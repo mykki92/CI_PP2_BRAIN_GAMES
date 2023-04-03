@@ -9,62 +9,54 @@ const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 const submitButton = document.getElementById('submit')
 
+let currentQuestion = 0;
+let score = 0;
 //Array containing quiz questions
-const quizQuestions = [
+let questions = [
     {
-        //Question 1
         question: "What is the only continent on Earth that does not have a desert?",
-        answers: {
-            a: "Asia",
-            b: "Europe",
-            c: "Antarctica",
-            d: "South America"
-        },
-        correctAnswer: "b"
+        answers: [
+            {option:"A: Asia", answer:false},
+            {option:"B: Europe", answer:true},
+            {option:"C: Antarctica", answer:false},
+            {option:"D: South America", answer:false}
+        ]
     },
     {
-        //Question 2
         question: "Which is the hottest planet in the Milky Way?",
-        answers: {
-            a: "Saturn",
-            b: "Jupiter",
-            c: "Venus",
-            d: "Mars"
-        },
-        correctAnswer: "c"
+        answers: [
+            {option:"A: Saturn", answer:false},
+            {option:"B: Jupiter", answer:false},
+            {option:"C: Venus", answer:true},
+            {option:"D: Mars", answer:false}
+        ]
     },
     {
-        //Question 3
         question: "Who was the Ancient Greek God of the Sun?",
-        answers: {
-            a: "Apollo",
-            b: "Hermes",
-            c: "Dionysus",
-            d: "Ares"
-        },
-        correctAnswer: "a"
+        answers: [
+            {option:"A: Apollo", answer:true},
+            {option:"B: Hermes", answer:false},
+            {option:"C: Dionysus", answer:false},
+            {option:"D: Ares", answer:false}
+        ]
     },
     {
-        //Question 4
-        question: "The Pantheon is located in which historic city?",
-        answers: {
-            a: "Athens",
-            b: "Cairo",
-            c: "Istanbul",
-            d: "Rome"
-        },
-        correctAnswer: "d"
-    },
-    {
-        //Question 5
         question: "How many hearts does an octopus have?",
-        answers: {
-            a: "1",
-            b: "2",
-            c: "3",
-            d: "76"
-        },
-        correctAnswer: "3"
+        answers: [
+            {option:"A: 1", answer:false},
+            {option:"B: 2", answer:false},
+            {option:"C: 3", answer:true},
+            {option:"D: 47", answer:false}
+        ]
     },
-];
+    {
+        question: "The Pantheon is located in which historic city?",
+        answers: [
+            {option:"A: Athens", answer:false},
+            {option:"B: Cairo", answer:false},
+            {option:"C: Istanbul", answer:false},
+            {option:"D: Rome", answer:true}
+        ]
+    },
+]
 
