@@ -32,39 +32,27 @@
         <h1>QUIZ</h1>
         <p>INSTRUCTIONS</p>
         <div id="quiz-container">
-            <div id="progress">
-                <div id="question-number">
-                    
-                </div>
-                <div id="score">
+            <div class="score">
+                <span id="player-score">0</span>
+                <span id="total-score">/5</span>
+            </div>
 
+            <div id="question-area">
+                <div id="question-text"></div>
+                <div class="options">
+                    <button class="btn btn-option" id="a">A</button>
+                    <button class="btn btn-option" id="b">B</button>
+                    <button class="btn btn-option" id="c">C</button>
+                    <button class="btn btn-option" id="d">D</button>
                 </div>
             </div>
-            <div id="question">DISPLAY QUESTION HERE</div>
-            <div id="answer-options">
-                <form id="quiz-form">
-                    <fieldset>
-                        <legend id="legend-text">Choices:</legend>
-                        <input class="radio-button" type="radio" id="optionA" name="choices" value="a">
-                        <label id="optionA-label" class="option" for="optionA"></label><br>
-                    
-                        <input class="radio-button" type="radio" id="optionB" name="choices" value="b">
-                        <label id="optionB-label" class="option" for="optionB"></label><br> 
-                        
-                        <input class="radio-button" type="radio" id="optionC" name="choices" value="c">
-                        <label id="optionC-label" class="option" for="optionC"></label><br>
 
-                        <input class="radio-button" type="radio" id="optionD" name="choices" value="d">
-                        <label id="optionD-label" class="option" for="optionD"></label><br>
-                    </fieldset>
-                </form>
+            <div class="controls">
+                <button class="btn btn-restart" id="restart">RESTART</button>
+                <button class="btn btn-prev" id="prev">PREV</button>
+                <button class="btn btn-next" id="next">NEXT</button>
+                <button class="btn btn-submit" id="submit">SUBMIT</button>
             </div>
-            <div id="submit">
-                <button id="submit-button">SUBMIT!</button>
-            </div>
-        </div>
-        <div id="results">
-            
         </div>
     </div>
 <script src="assets/js/quiz.js"></script>
