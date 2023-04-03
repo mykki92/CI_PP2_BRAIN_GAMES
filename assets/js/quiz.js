@@ -4,10 +4,10 @@ const answerButtonA = document.getElementById('a');
 const answerButtonB = document.getElementById('b');
 const answerButtonC = document.getElementById('c');
 const answerButtonD = document.getElementById('d');
-const restartButton = document.getElementById('restart');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
-const submitButton = document.getElementById('submit')
+const submitButton = document.getElementById('submit');
+const restartButton = document.getElementById('restart');
 
 let currentQuestion = 0;
 let score = 0;
@@ -124,4 +124,68 @@ function startQuiz() {
 }
 
 startQuiz();
+
+function prev() {
+    currentQuestion--;
+    if(currentQuestion<=0){
+        prevButton.classList.add('hide');
+        nextButton.classList.remove('hide');
+    }
+    
+    questionText.innerHTML = questions[currentQuestion].question;
+    answerButtonA.innerHTML = questions[currentQuestion].answers[0].option;
+    answerButtonA.onclick = () => {
+        let ano = 0;
+        if(questions[currentQuestion].answers[ano].answer){
+            if(score<5){
+                score++;
+            }
+        }
+        playerScore.innerHTML = score;
+        if(currentQuestion<4){
+            next();
+        }
+    }
+    answerButtonB.innerHTML = questions[currentQuestion].answers[1].option;
+    answerButtonB.onclick = () => {
+        let ano = 1;
+        if(questions[currentQuestion].answers[ano].answer){
+            if(score<5){
+                score++;
+            }
+        }
+        playerScore.innerHTML = score;
+        if(currentQuestion<4){
+            next();
+        }
+    }
+    answerButtonC.innerHTML = questions[currentQuestion].answers[2].option;
+    answerButtonC.onclick = () => {
+        let ano = 2;
+        if(questions[currentQuestion].answers[ano].answer){
+            if(score<5){
+                score++;
+            }
+        }
+        playerScore.innerHTML = score;
+        if(currentQuestion<4){
+            next();
+        }
+    }
+    answerButtonD.innerHTML = questions[currentQuestion].answers[3].option;
+    answerButtonD.onclick = () => {
+        let ano = 3;
+        if(questions[currentQuestion].answers[ano].answer){
+            if(score<5){
+                score++;
+            }
+        }
+        playerScore.innerHTML = score;
+        if(currentQuestion<4){
+            next();
+        }
+    }
+
+    nextButton.classList.remove('hide');
+}
 
