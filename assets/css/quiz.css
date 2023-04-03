@@ -38,27 +38,61 @@ a {
     padding-left: 10px;
 }
 #quiz-container {
-    width: 90%;
+    width: 100%;
     padding-left: 10px;
     padding-top: 30px;
 }
-#quiz-form {
-    padding-top: 30px;
+#question-area {
+    width: 70%;
+    border: 3px solid #000;
+    margin: 0 auto;
 }
-#submit-button {
-    width: 100px;
-    height: 30px;
-    background-color: #fff;
-    color: #000;
-    font-family: "Righteous", cursive;
-    font-size: 120%;
+#question-text {
+    padding-top: 20px;
+    font-size: 150%;
     text-align: center;
 }
-#submit-button:hover {
+.options {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.btn-option {
+    height: 40px;
+    width: 200px;
+    border: 2px solid #000;
+    background-color: #fff;
+    font-family: "Righteous", cursive;
+    font-size: 120%;
+}
+.btn-option:hover {
     background-color: #000;
     color: #fff;
 }
+.score {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 150%;
+}
 
+/*Game controls*/
+.controls {
+    padding-top: 20px;
+    text-align: center;
+}
+.btn-controls {
+    height: 40px;
+    width: 200px;
+    border: 2px solid #000;
+    background-color: #fff;
+    font-family: "Righteous", cursive;
+    font-size: 120%;
+}
+.btn-controls:hover {
+    background-color: #000;
+    color: #fff;
+}
 .hide {
     display: none;
 }

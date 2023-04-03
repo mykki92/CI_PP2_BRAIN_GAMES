@@ -32,11 +32,6 @@
         <h1>QUIZ</h1>
         <p>INSTRUCTIONS</p>
         <div id="quiz-container">
-            <div class="score">
-                <span id="player-score">0</span>
-                <span id="total-score">/5</span>
-            </div>
-
             <div id="question-area">
                 <div id="question-text"></div>
                 <div class="options">
@@ -45,13 +40,17 @@
                     <button class="btn btn-option" id="c">C</button>
                     <button class="btn btn-option" id="d">D</button>
                 </div>
+                <div class="score">
+                    <span id="player-score">0</span>
+                    <span id="total-score">/5</span>
+                </div>
             </div>
 
             <div class="controls">
-                <button class="btn btn-restart" id="restart">RESTART</button>
-                <button class="btn btn-prev" id="prev">PREV</button>
-                <button class="btn btn-next" id="next">NEXT</button>
-                <button class="btn btn-submit" id="submit">SUBMIT</button>
+                <button class="btn btn-controls" id="restart">RESTART</button>
+                <button class="btn btn-controls" id="prev">PREV</button>
+                <button class="btn btn-controls" id="next">NEXT</button>
+                <button class="btn btn-controls" id="submit">SUBMIT</button>
             </div>
         </div>
     </div>

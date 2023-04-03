@@ -11,10 +11,10 @@ const restartButton = document.getElementById('restart');
 
 let currentQuestion = 0;
 let score = 0;
-//Array containing quiz questions
+//Array containing quiz questions and answer options
 let questions = [
     {
-        question: "What is the only continent on Earth that does not have a desert?",
+        question: "QUESTION 1:<br><br>What is the only continent on Earth that does not have a desert?",
         answers: [
             {option:"A: Asia", answer:false},
             {option:"B: Europe", answer:true},
@@ -23,7 +23,7 @@ let questions = [
         ]
     },
     {
-        question: "Which is the hottest planet in the Milky Way?",
+        question: "QUESTION 2:<br><br>Which is the hottest planet in the Milky Way?",
         answers: [
             {option:"A: Saturn", answer:false},
             {option:"B: Jupiter", answer:false},
@@ -32,7 +32,7 @@ let questions = [
         ]
     },
     {
-        question: "Who was the Ancient Greek God of the Sun?",
+        question: "QUESTION 3:<br><br>Who was the Ancient Greek God of the Sun?",
         answers: [
             {option:"A: Apollo", answer:true},
             {option:"B: Hermes", answer:false},
@@ -41,7 +41,7 @@ let questions = [
         ]
     },
     {
-        question: "How many hearts does an octopus have?",
+        question: "QUESTION 4:<br><br>How many hearts does an octopus have?",
         answers: [
             {option:"A: 1", answer:false},
             {option:"B: 2", answer:false},
@@ -50,7 +50,7 @@ let questions = [
         ]
     },
     {
-        question: "The Pantheon is located in which historic city?",
+        question: "QUESTION 5:<br><br>The Pantheon is located in which historic city?",
         answers: [
             {option:"A: Athens", answer:false},
             {option:"B: Cairo", answer:false},
@@ -65,6 +65,7 @@ prevButton.addEventListener('click', prev);
 nextButton.addEventListener('click', next);
 submitButton.addEventListener('click', submit);
 
+// starts quiz and generates questions with answer options
 function startQuiz() {
     currentQuestion = 0;
     questionText.innerHTML = questions[currentQuestion].question;
@@ -125,6 +126,7 @@ function startQuiz() {
 
 startQuiz();
 
+// allows user to navigate to previous question
 function prev() {
     currentQuestion--;
     if(currentQuestion<=0){
@@ -189,6 +191,7 @@ function prev() {
     nextButton.classList.remove('hide');
 }
 
+// allows user to navigate to next question
 function next() {
     currentQuestion++;
     if(currentQuestion>=4){
@@ -253,6 +256,7 @@ function next() {
     prevButton.classList.remove('hide');
 }
 
+// submits all answers, hides questions and quiz buttons and returns a message with the player score
 function submit() {
     prevButton.classList.add('hide');
     nextButton.classList.add('hide');
@@ -264,6 +268,7 @@ function submit() {
     questionText.innerHTML = `Well done! You scored ${score}/5!`;
 }
 
+// resets variables to restart the quiz
 function restart() {
     currentQuestion = 0;
     prevButton.classList.remove('hide');
