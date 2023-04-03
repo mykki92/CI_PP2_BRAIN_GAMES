@@ -252,3 +252,14 @@ function next() {
 
     prevButton.classList.remove('hide');
 }
+
+function submit() {
+    prevButton.classList.add('hide');
+    nextButton.classList.add('hide');
+    submitButton.classList.add('hide');
+    answerButtonA.classList.add('hide');
+    answerButtonB.classList.add('hide');
+    answerButtonC.classList.add('hide');
+    answerButtonD.classList.add('hide');
+    questionText.innerHTML = `Well done! You scored ${score}/5!`;
+}
