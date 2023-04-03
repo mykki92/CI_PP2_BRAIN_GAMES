@@ -189,3 +189,66 @@ function prev() {
     nextButton.classList.remove('hide');
 }
 
+function next() {
+    currentQuestion++;
+    if(currentQuestion>=4){
+        nextButton.classList.add('hide');
+        prevButton.classList.remove('hide');
+    }
+
+    questionText.innerHTML = questions[currentQuestion].question;
+    answerButtonA.innerHTML = questions[currentQuestion].answers[0].option;
+    answerButtonA.onclick = () => {
+        let ano = 0;
+        if(questions[currentQuestion].answers[ano].answer){
+            if(score<5){
+                score++;
+            }
+        }
+        playerScore.innerHTML = score;
+        if(currentQuestion<4){
+            next();
+        }
+    }
+    answerButtonB.innerHTML = questions[currentQuestion].answers[1].option;
+    answerButtonB.onclick = () => {
+        let ano = 1;
+        if(questions[currentQuestion].answers[ano].answer){
+            if(score<5){
+                score++;
+            }
+        }
+        playerScore.innerHTML = score;
+        if(currentQuestion<4){
+            next();
+        }
+    }
+    answerButtonC.innerHTML = questions[currentQuestion].answers[2].option;
+    answerButtonC.onclick = () => {
+        let ano = 2;
+        if(questions[currentQuestion].answers[ano].answer){
+            if(score<5){
+                score++;
+            }
+        }
+        playerScore.innerHTML = score;
+        if(currentQuestion<4){
+            next();
+        }
+    }
+    answerButtonD.innerHTML = questions[currentQuestion].answers[3].option;
+    answerButtonD.onclick = () => {
+        let ano = 3;
+        if(questions[currentQuestion].answers[ano].answer){
+            if(score<5){
+                score++;
+            }
+        }
+        playerScore.innerHTML = score;
+        if(currentQuestion<4){
+            next();
+        }
+    }
+
+    prevButton.classList.remove('hide');
+}
