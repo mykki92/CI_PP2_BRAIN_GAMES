@@ -58,3 +58,7 @@ a {
     background-color: #000;
     color: #fff;
 }
+
+.hide {
+    display: none;
+}

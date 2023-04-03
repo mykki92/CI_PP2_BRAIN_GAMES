@@ -1,6 +1,13 @@
-let questionContainer = document.getElementById('question');
-let submitButton = document.getElementById('submit-button');
-let resultsContainer = document/getElementById('results');
+const playerScore = document.getElementById('player-score');
+const questionText = document.getElementById('question-text');
+const answerButtonA = document.getElementById('a');
+const answerButtonB = document.getElementById('b');
+const answerButtonC = document.getElementById('c');
+const answerButtonD = document.getElementById('d');
+const restartButton = document.getElementById('restart');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+const submitButton = document.getElementById('submit')
 
 //Array containing quiz questions
 const quizQuestions = [
@@ -61,74 +68,3 @@ const quizQuestions = [
     },
 ];
 
-generateQuiz(quizQuestions, questionContainer, submitButton, resultsContainer);
-
-function generateQuiz(questions, questionContainer, submitButton, resultsContainer){
-
-  function showQuestions(questions, questionContainer){
-    var output = [];
-    var answers;
-
-    for(var i=0; i<questions.length; i++){
-      answers = [];
-    
-      for(letter in questions[i].answers){
-        answers.push(
-          '<label>'
-            + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-            + letter + ': '
-            + questions[i].answers[letter]
-          + '</label>'
-        );
-      }
-      output.push(
-        '<div id="question">' + questions[i].question + '</div>'
-        + '<div id="answers">' + answers.join('') + '</div>'
-      );
-    }
-
-    questionContainer.innerHTML = output.join('');
-    }
-
-    function showResults(questions, questionContainer, resultsContainer){
-    
-        // gather answer containers from our quiz
-        var answerContainers = questionContainer.querySelectorAll('.answers');
-        
-        // keep track of user's answers
-        var userAnswer = '';
-        var numCorrect = 0;
-        
-        // for each question...
-        for(var i=0; i<questions.length; i++){
-    
-          // find selected answer
-          userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
-          
-          // if answer is correct
-          if(userAnswer===questions[i].correctAnswer){
-            // add to the number of correct answers
-            numCorrect++;
-            
-            // color the answers green
-            answerContainers[i].style.color = 'lightgreen';
-          }
-          // if answer is wrong or blank
-          else{
-            // color the answers red
-            answerContainers[i].style.color = 'red';
-          }
-        }
-    
-        // show number of correct answers out of total
-        resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
-      }
-    
-      // show questions right away
-      showQuestions(questions, questionContainer);
-      
-      // on submit, show results
-      submitButton.onclick = function(){
-        showResults(questions, questionContainer, resultsContainer);
-      }
-}
