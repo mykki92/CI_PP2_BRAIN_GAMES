@@ -263,3 +263,17 @@ function submit() {
     answerButtonD.classList.add('hide');
     questionText.innerHTML = `Well done! You scored ${score}/5!`;
 }
+
+function restart() {
+    currentQuestion = 0;
+    prevButton.classList.remove('hide');
+    nextButton.classList.remove('hide');
+    submitButton.classList.remove('hide');
+    answerButtonA.classList.remove('hide');
+    answerButtonB.classList.remove('hide');
+    answerButtonC.classList.remove('hide');
+    answerButtonD.classList.remove('hide');
+    score = 0;
+    playerScore.innerHTML = score;
+    startQuiz();
+}
