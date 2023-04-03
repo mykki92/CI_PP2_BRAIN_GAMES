@@ -58,8 +58,54 @@ let questions = [
             {option:"D: Rome", answer:true}
         ]
     },
+    {
+        question: "QUESTION 3:<br><br>Who was the Ancient Greek God of the Sun?",
+        answers: [
+            {option:"A: Apollo", answer:true},
+            {option:"B: Hermes", answer:false},
+            {option:"C: Dionysus", answer:false},
+            {option:"D: Ares", answer:false}
+        ]
+    },
+    {
+        question: "QUESTION 5:<br><br>The Pantheon is located in which historic city?",
+        answers: [
+            {option:"A: Athens", answer:false},
+            {option:"B: Cairo", answer:false},
+            {option:"C: Istanbul", answer:false},
+            {option:"D: Rome", answer:true}
+        ]
+    },
+    {
+        question: "QUESTION 5:<br><br>The Pantheon is located in which historic city?",
+        answers: [
+            {option:"A: Athens", answer:false},
+            {option:"B: Cairo", answer:false},
+            {option:"C: Istanbul", answer:false},
+            {option:"D: Rome", answer:true}
+        ]
+    },
+    {
+        question: "QUESTION 5:<br><br>The Pantheon is located in which historic city?",
+        answers: [
+            {option:"A: Athens", answer:false},
+            {option:"B: Cairo", answer:false},
+            {option:"C: Istanbul", answer:false},
+            {option:"D: Rome", answer:true}
+        ]
+    },
+    {
+        question: "QUESTION 5:<br><br>The Pantheon is located in which historic city?",
+        answers: [
+            {option:"A: Athens", answer:false},
+            {option:"B: Cairo", answer:false},
+            {option:"C: Istanbul", answer:false},
+            {option:"D: Rome", answer:true}
+        ]
+    },
 ]
 
+// event listeners for control buttons
 restartButton.addEventListener('click', restart);
 prevButton.addEventListener('click', prev);
 nextButton.addEventListener('click', next);
@@ -71,53 +117,53 @@ function startQuiz() {
     questionText.innerHTML = questions[currentQuestion].question;
     answerButtonA.innerHTML = questions[currentQuestion].answers[0].option;
     answerButtonA.onclick = () => {
-        let ano = 0;
-        if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+        let num = 0;
+        if(questions[currentQuestion].answers[num].answer){
+            if(score<10){
                 score++;
             }
         }
         playerScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
     answerButtonB.innerHTML = questions[currentQuestion].answers[1].option;
     answerButtonB.onclick = () => {
-        let ano = 1;
-        if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+        let num = 1;
+        if(questions[currentQuestion].answers[num].answer){
+            if(score<10){
                 score++;
             }
         }
         playerScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
     answerButtonC.innerHTML = questions[currentQuestion].answers[2].option;
     answerButtonC.onclick = () => {
-        let ano = 2;
-        if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+        let num = 2;
+        if(questions[currentQuestion].answers[num].answer){
+            if(score<10){
                 score++;
             }
         }
         playerScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
     answerButtonD.innerHTML = questions[currentQuestion].answers[3].option;
     answerButtonD.onclick = () => {
-        let ano = 3;
-        if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+        let num = 3;
+        if(questions[currentQuestion].answers[num].answer){
+            if(score<10){
                 score++;
             }
         }
         playerScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
@@ -137,53 +183,53 @@ function prev() {
     questionText.innerHTML = questions[currentQuestion].question;
     answerButtonA.innerHTML = questions[currentQuestion].answers[0].option;
     answerButtonA.onclick = () => {
-        let ano = 0;
-        if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+        let num = 0;
+        if(questions[currentQuestion].answers[num].answer){
+            if(score<10){
                 score++;
             }
         }
         playerScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
     answerButtonB.innerHTML = questions[currentQuestion].answers[1].option;
     answerButtonB.onclick = () => {
-        let ano = 1;
-        if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+        let num = 1;
+        if(questions[currentQuestion].answers[num].answer){
+            if(score<10){
                 score++;
             }
         }
         playerScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
     answerButtonC.innerHTML = questions[currentQuestion].answers[2].option;
     answerButtonC.onclick = () => {
-        let ano = 2;
-        if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+        let num = 2;
+        if(questions[currentQuestion].answers[num].answer){
+            if(score<10){
                 score++;
             }
         }
         playerScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
     answerButtonD.innerHTML = questions[currentQuestion].answers[3].option;
     answerButtonD.onclick = () => {
-        let ano = 3;
-        if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+        let num = 3;
+        if(questions[currentQuestion].answers[num].answer){
+            if(score<10){
                 score++;
             }
         }
         playerScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
@@ -194,7 +240,7 @@ function prev() {
 // allows user to navigate to next question
 function next() {
     currentQuestion++;
-    if(currentQuestion>=4){
+    if(currentQuestion>=9){
         nextButton.classList.add('hide');
         prevButton.classList.remove('hide');
     }
@@ -202,53 +248,53 @@ function next() {
     questionText.innerHTML = questions[currentQuestion].question;
     answerButtonA.innerHTML = questions[currentQuestion].answers[0].option;
     answerButtonA.onclick = () => {
-        let ano = 0;
-        if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+        let num = 0;
+        if(questions[currentQuestion].answers[num].answer){
+            if(score<10){
                 score++;
             }
         }
         playerScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
     answerButtonB.innerHTML = questions[currentQuestion].answers[1].option;
     answerButtonB.onclick = () => {
-        let ano = 1;
-        if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+        let num = 1;
+        if(questions[currentQuestion].answers[num].answer){
+            if(score<10){
                 score++;
             }
         }
         playerScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
     answerButtonC.innerHTML = questions[currentQuestion].answers[2].option;
     answerButtonC.onclick = () => {
-        let ano = 2;
-        if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+        let num = 2;
+        if(questions[currentQuestion].answers[num].answer){
+            if(score<10){
                 score++;
             }
         }
         playerScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
     answerButtonD.innerHTML = questions[currentQuestion].answers[3].option;
     answerButtonD.onclick = () => {
-        let ano = 3;
-        if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+        let num = 3;
+        if(questions[currentQuestion].answers[num].answer){
+            if(score<10){
                 score++;
             }
         }
         playerScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
@@ -265,7 +311,7 @@ function submit() {
     answerButtonB.classList.add('hide');
     answerButtonC.classList.add('hide');
     answerButtonD.classList.add('hide');
-    questionText.innerHTML = `Well done! You scored ${score}/5!`;
+    questionText.innerHTML = `Well done! You scored ${score}/10!`;
 }
 
 // resets variables to restart the quiz
