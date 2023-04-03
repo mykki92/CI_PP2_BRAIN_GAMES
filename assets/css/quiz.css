@@ -37,10 +37,13 @@ a {
 #quiz-section h1, p {
     padding-left: 10px;
 }
+#quiz-section p {
+    font-size: 120%;
+}
 #quiz-container {
     width: 100%;
     padding-left: 10px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 #question-area {
     width: 70%;
