@@ -41,16 +41,34 @@ let questions = [
         ]
     },
     {
-        question: "QUESTION 4:<br><br>How many hearts does an octopus have?",
+        question: "QUESTION 4:<br><br>Which pirate commanded a ship name Adventure Galley?",
         answers: [
-            {option:"A: 1", answer:false},
-            {option:"B: 2", answer:false},
-            {option:"C: 3", answer:true},
-            {option:"D: 47", answer:false}
+            {option:"A: Blackbeard", answer:false},
+            {option:"B: Henry Every", answer:false},
+            {option:"C: William Kidd", answer:true},
+            {option:"D: Anne Bonny", answer:false}
         ]
     },
     {
-        question: "QUESTION 5:<br><br>The Pantheon is located in which historic city?",
+        question: "QUESTION 5:<br><br>Which are the four terrestrial planets in our solar system?",
+        answers: [
+            {option:"A: Earth, Mars, Neptune and Venus", answer:false},
+            {option:"B: Mars, Neptune, Earth and Uranus", answer:false},
+            {option:"C: Venus, Earth, Saturn and Mars", answer:false},
+            {option:"D: Mercury, Venus, Mars and Earth", answer:true}
+        ]
+    },
+    {
+        question: "QUESTION 6:<br><br>What is the largest capital city in North America?",
+        answers: [
+            {option:"A: Ottawa", answer:false},
+            {option:"B: Mexico City", answer:true},
+            {option:"C: Washington, D.C.", answer:false},
+            {option:"D: Panama City", answer:false}
+        ]
+    },
+    {
+        question: "QUESTION 7:<br><br>The Pantheon is located in which historic city?",
         answers: [
             {option:"A: Athens", answer:false},
             {option:"B: Cairo", answer:false},
@@ -59,48 +77,30 @@ let questions = [
         ]
     },
     {
-        question: "QUESTION 3:<br><br>Who was the Ancient Greek God of the Sun?",
+        question: "QUESTION 8:<br><br>Which was the last dynasty in China?",
         answers: [
-            {option:"A: Apollo", answer:true},
-            {option:"B: Hermes", answer:false},
-            {option:"C: Dionysus", answer:false},
-            {option:"D: Ares", answer:false}
+            {option:"A: Ming", answer:false},
+            {option:"B: Liao", answer:false},
+            {option:"C: Qing", answer:true},
+            {option:"D: Yuan", answer:false}
         ]
     },
     {
-        question: "QUESTION 5:<br><br>The Pantheon is located in which historic city?",
+        question: "QUESTION 9:<br><br>What was the language of the Aztecs?",
         answers: [
-            {option:"A: Athens", answer:false},
-            {option:"B: Cairo", answer:false},
-            {option:"C: Istanbul", answer:false},
-            {option:"D: Rome", answer:true}
+            {option:"A: Sumerian", answer:false},
+            {option:"B: Tarahumara", answer:false},
+            {option:"C: Aramaic", answer:false},
+            {option:"D: Nahuatl", answer:true}
         ]
     },
     {
-        question: "QUESTION 5:<br><br>The Pantheon is located in which historic city?",
+        question: "QUESTION 10:<br><br>Which star is nearest to Earth?",
         answers: [
-            {option:"A: Athens", answer:false},
-            {option:"B: Cairo", answer:false},
-            {option:"C: Istanbul", answer:false},
-            {option:"D: Rome", answer:true}
-        ]
-    },
-    {
-        question: "QUESTION 5:<br><br>The Pantheon is located in which historic city?",
-        answers: [
-            {option:"A: Athens", answer:false},
-            {option:"B: Cairo", answer:false},
-            {option:"C: Istanbul", answer:false},
-            {option:"D: Rome", answer:true}
-        ]
-    },
-    {
-        question: "QUESTION 5:<br><br>The Pantheon is located in which historic city?",
-        answers: [
-            {option:"A: Athens", answer:false},
-            {option:"B: Cairo", answer:false},
-            {option:"C: Istanbul", answer:false},
-            {option:"D: Rome", answer:true}
+            {option:"A: Lalande 21185", answer:false},
+            {option:"B: Proxima Centauri", answer:true},
+            {option:"C: The Sun", answer:false},
+            {option:"D: Rigil Kentaurus", answer:false}
         ]
     },
 ]
