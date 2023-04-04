@@ -4,7 +4,6 @@ const answerButtonA = document.getElementById('a');
 const answerButtonB = document.getElementById('b');
 const answerButtonC = document.getElementById('c');
 const answerButtonD = document.getElementById('d');
-const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 const submitButton = document.getElementById('submit');
 const restartButton = document.getElementById('restart');
@@ -107,8 +106,6 @@ let questions = [
 
 // event listeners for control buttons
 restartButton.addEventListener('click', restart);
-prevButton.addEventListener('click', prev);
-nextButton.addEventListener('click', next);
 submitButton.addEventListener('click', submit);
 
 // starts quiz and generates questions with answer options
@@ -167,84 +164,15 @@ function startQuiz() {
             next();
         }
     }
-    prevButton.classList.add('hide');
 }
 
 startQuiz();
 
-// allows user to navigate to previous question
-function prev() {
-    currentQuestion--;
-    if(currentQuestion<=0){
-        prevButton.classList.add('hide');
-        nextButton.classList.remove('hide');
-    }
-    
-    questionText.innerHTML = questions[currentQuestion].question;
-    answerButtonA.innerHTML = questions[currentQuestion].answers[0].option;
-    answerButtonA.onclick = () => {
-        let num = 0;
-        if(questions[currentQuestion].answers[num].answer){
-            if(score<10){
-                score++;
-            }
-        }
-        playerScore.innerHTML = score;
-        if(currentQuestion<9){
-            next();
-        }
-    }
-    answerButtonB.innerHTML = questions[currentQuestion].answers[1].option;
-    answerButtonB.onclick = () => {
-        let num = 1;
-        if(questions[currentQuestion].answers[num].answer){
-            if(score<10){
-                score++;
-            }
-        }
-        playerScore.innerHTML = score;
-        if(currentQuestion<9){
-            next();
-        }
-    }
-    answerButtonC.innerHTML = questions[currentQuestion].answers[2].option;
-    answerButtonC.onclick = () => {
-        let num = 2;
-        if(questions[currentQuestion].answers[num].answer){
-            if(score<10){
-                score++;
-            }
-        }
-        playerScore.innerHTML = score;
-        if(currentQuestion<9){
-            next();
-        }
-    }
-    answerButtonD.innerHTML = questions[currentQuestion].answers[3].option;
-    answerButtonD.onclick = () => {
-        let num = 3;
-        if(questions[currentQuestion].answers[num].answer){
-            if(score<10){
-                score++;
-            }
-        }
-        playerScore.innerHTML = score;
-        if(currentQuestion<9){
-            next();
-        }
-    }
 
-    nextButton.classList.remove('hide');
-}
 
 // allows user to navigate to next question
 function next() {
     currentQuestion++;
-    if(currentQuestion>=9){
-        nextButton.classList.add('hide');
-        prevButton.classList.remove('hide');
-    }
-
     questionText.innerHTML = questions[currentQuestion].question;
     answerButtonA.innerHTML = questions[currentQuestion].answers[0].option;
     answerButtonA.onclick = () => {
@@ -299,13 +227,11 @@ function next() {
         }
     }
 
-    prevButton.classList.remove('hide');
+    
 }
 
 // submits all answers, hides questions and quiz buttons and returns a message with the player score
 function submit() {
-    prevButton.classList.add('hide');
-    nextButton.classList.add('hide');
     submitButton.classList.add('hide');
     answerButtonA.classList.add('hide');
     answerButtonB.classList.add('hide');
@@ -317,8 +243,6 @@ function submit() {
 // resets variables to restart the quiz
 function restart() {
     currentQuestion = 0;
-    prevButton.classList.remove('hide');
-    nextButton.classList.remove('hide');
     submitButton.classList.remove('hide');
     answerButtonA.classList.remove('hide');
     answerButtonB.classList.remove('hide');
