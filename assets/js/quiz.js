@@ -123,6 +123,8 @@ function startQuiz() {
         playerScore.innerHTML = score;
         if(currentQuestion<9){
             next();
+        } else {
+            submit();
         }
     }
     answerButtonB.innerHTML = questions[currentQuestion].answers[1].option;
@@ -136,6 +138,8 @@ function startQuiz() {
         playerScore.innerHTML = score;
         if(currentQuestion<9){
             next();
+        } else {
+            submit();
         }
     }
     answerButtonC.innerHTML = questions[currentQuestion].answers[2].option;
@@ -149,7 +153,10 @@ function startQuiz() {
         playerScore.innerHTML = score;
         if(currentQuestion<9){
             next();
+        } else {
+            submit();
         }
+        
     }
     answerButtonD.innerHTML = questions[currentQuestion].answers[3].option;
     answerButtonD.onclick = () => {
@@ -162,7 +169,10 @@ function startQuiz() {
         playerScore.innerHTML = score;
         if(currentQuestion<9){
             next();
+        } else {
+            submit();
         }
+        
     }
 }
 
@@ -185,6 +195,8 @@ function next() {
         playerScore.innerHTML = score;
         if(currentQuestion<9){
             next();
+        } else {
+            submit();
         }
     }
     answerButtonB.innerHTML = questions[currentQuestion].answers[1].option;
@@ -198,6 +210,8 @@ function next() {
         playerScore.innerHTML = score;
         if(currentQuestion<9){
             next();
+        } else {
+            submit();
         }
     }
     answerButtonC.innerHTML = questions[currentQuestion].answers[2].option;
@@ -211,6 +225,8 @@ function next() {
         playerScore.innerHTML = score;
         if(currentQuestion<9){
             next();
+        } else {
+            submit();
         }
     }
     answerButtonD.innerHTML = questions[currentQuestion].answers[3].option;
@@ -224,6 +240,8 @@ function next() {
         playerScore.innerHTML = score;
         if(currentQuestion<9){
             next();
+        } else {
+            submit();
         }
     }
 
