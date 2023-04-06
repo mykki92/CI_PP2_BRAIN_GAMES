@@ -4,12 +4,11 @@ const answerButtonA = document.getElementById('a');
 const answerButtonB = document.getElementById('b');
 const answerButtonC = document.getElementById('c');
 const answerButtonD = document.getElementById('d');
-const nextButton = document.getElementById('next');
-
 const restartButton = document.getElementById('restart');
 
 let currentQuestion = 0;
 let score = 0;
+
 //Array containing quiz questions and answer options
 let questions = [
     {
@@ -107,7 +106,6 @@ let questions = [
 // event listeners for control buttons
 restartButton.addEventListener('click', restart);
 
-
 // starts quiz and generates questions with answer options
 function startQuiz() {
     currentQuestion = 0;
@@ -172,13 +170,9 @@ function startQuiz() {
         } else {
             submit();
         }
-        
     }
 }
-
 startQuiz();
-
-
 
 // allows user to navigate to next question
 function next() {
@@ -244,13 +238,10 @@ function next() {
             submit();
         }
     }
-
-    
 }
 
 // submits all answers, hides questions and quiz buttons and returns a message with the player score
 function submit() {
-    
     answerButtonA.classList.add('hide');
     answerButtonB.classList.add('hide');
     answerButtonC.classList.add('hide');
@@ -261,7 +252,6 @@ function submit() {
 // resets variables to restart the quiz
 function restart() {
     currentQuestion = 0;
-    
     answerButtonA.classList.remove('hide');
     answerButtonB.classList.remove('hide');
     answerButtonC.classList.remove('hide');
