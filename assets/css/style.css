@@ -93,3 +93,18 @@ a {
     background-color: #000;
     color: #fff;
 }
+
+/*404*/
+#error-404 {
+    text-align: center;
+    padding-top: 50px;
+}
+#header404 {
+    font-size: 200%;
+}
+#error-404 i {
+    font-size: 200%;
+}
+#content-404 {
+    font-size: 150%;
+}
