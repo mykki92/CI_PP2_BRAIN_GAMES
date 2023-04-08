@@ -32,12 +32,19 @@
         <form id="contact-form">
             <fieldset>
                 <legend id="form-header">Contact Us:</legend>
-                <label for="fname" id="fname-label">First Name:</label>
-                <input id="fname" name="first_name" type="text" class="text-input" required>
-                <label for="lname" id="lname-label">Last Name:</label>
-                <input id="lname" name="last_name" type="text" class="text-input" required>
-                <label for="email" id="email-label">Email Address:</label>
-                <input type="email" id="email" name="email_address" class="text-input" required>
+                    <!--Text inputs-->
+                    <label for="fname" id="fname-label">First Name:</label>
+                    <input id="fname" name="first_name" type="text" class="text-input" required>
+                    <label for="lname" id="lname-label">Last Name:</label>
+                    <input id="lname" name="last_name" type="text" class="text-input" required>
+                    <label for="email" id="email-label">Email Address:</label>
+                    <input type="email" id="email" name="email_address" class="text-input" required>
+                    <!--Textbox-->
+                    <textarea id="feedback-box" cols="10" rows="5"></textarea>
+                    <label for="feedback-box" id="feedback-box-label"></label>
+                    <!--Submit button-->
+                    <button type="submit" id="submit-button">Submit</button>
+                </form>
                 <div id="error"></div>
             </fieldset>
         </form>
