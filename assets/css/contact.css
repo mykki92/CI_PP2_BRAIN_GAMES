@@ -34,6 +34,26 @@ a {
 }
 
 /*Contact page*/
+#contact {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+}
+#form-info {
+    vertical-align: top;
+    display: inline-block;
+    width: 25%;
+    padding-left: 10px;
+    text-align: center;
+    padding-top: 80px;
+}
+#form-area {
+    vertical-align: top;
+    display: inline-block;
+    width: 70%;
+    padding-left: 10px;
+    padding-top: 20px;
+}
 fieldset {
     width: 95%;
     height: 400px;
@@ -52,60 +72,60 @@ fieldset {
     margin: 5px 0 20px 0;
     border-radius: 2px;
 }
-.text-input:hover {
-    background-color: #3a3a3a;
-}
 #fname {
     width: 200px;
     position: absolute;
-    left: 130px;
-    top: 150px;
+    left: 490px;
+    top: 60px;
 }
 #fname-label {
     width: 90px;
     position: absolute;
-    left: 40px;
-    top: 160px;
+    left: 400px;
+    top: 70px;
 }
 #lname {
     width: 200px;
     position: absolute;
-    left: 440px;
-    top: 150px;
+    left: 810px;
+    top: 60px;
 }
 #lname-label {
     width: 100px;
     position: absolute;
-    left: 350px;
-    top: 160px;
+    left: 720px;
+    top: 70px;
 }
 #email {
-    width: 485px;
+    width: 495px;
     position: absolute;
-    left: 155px;
-    top: 200px;
+    left: 515px;
+    top: 110px;
 }
 #email-label {
     width: 130px;
     position: absolute;
-    left: 40px;
-    top: 210px;
+    left: 400px;
+    top: 120px;
 }
 /*Feedback text box*/
 #feedback-box {
     position: absolute;
-    left: 40px;
-    top: 250px;
-    width: 600px;
+    left: 400px;
+    top: 160px;
+    width: 610px;
     height: 200px;
-}
-#feedback-box-label {
-    position: absolute;
-    left: 40px;
-    top: 260px;
 }
 #submit-button {
     position: absolute;
-    left: 40px;
-    top: 480px;
+    left: 400px;
+    top: 390px;
+    border: 2px solid #000;
+    background-color: #fff;
+    font-family: "Righteous", cursive;
+    font-size: 100%;
+}
+#submit-button:hover {
+    background-color: #000;
+    color: #fff;
 }

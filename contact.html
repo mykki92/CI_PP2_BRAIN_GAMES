@@ -28,26 +28,42 @@
             </ul>
         </nav>
     </div>
-    <div id="form-area">
-        <form id="contact-form">
-            <fieldset>
-                <legend id="form-header">Contact Us:</legend>
-                    <!--Text inputs-->
-                    <label for="fname" id="fname-label">First Name:</label>
-                    <input id="fname" name="first_name" type="text" class="text-input" required>
-                    <label for="lname" id="lname-label">Last Name:</label>
-                    <input id="lname" name="last_name" type="text" class="text-input" required>
-                    <label for="email" id="email-label">Email Address:</label>
-                    <input type="email" id="email" name="email_address" class="text-input" required>
-                    <!--Textbox-->
-                    <textarea id="feedback-box" cols="10" rows="5"></textarea>
-                    <label for="feedback-box" id="feedback-box-label"></label>
-                    <!--Submit button-->
-                    <button type="submit" id="submit-button">Submit</button>
-                </form>
-                <div id="error"></div>
-            </fieldset>
-        </form>
+    <div id="contact">
+        <div id="form-info">
+            <h2>Your feedback is important to us!</h2>
+            <p>We'll be adding more features and games very soon!</p>
+            <p>Let us know what you think so far and what you'd like to see, we'd love to hear your ideas!</p>
+            <h1><i class="fas fa-brain"></i></h1>
+        </div>
+        <div id="form-area">
+            <form id="contact-form">
+                <fieldset>
+                    <legend id="form-header">Contact Us:</legend>
+                        <!--Text inputs-->
+                        <label for="fname" id="fname-label">First Name:</label>
+                        <input id="fname" name="first_name" type="text" class="text-input" required>
+                        <label for="lname" id="lname-label">Last Name:</label>
+                        <input id="lname" name="last_name" type="text" class="text-input" required>
+                        <label for="email" id="email-label">Email Address:</label>
+                        <input type="email" id="email" name="email_address" class="text-input" required>
+                        <!--Textbox-->
+                        <textarea id="feedback-box" cols="10" rows="5" required></textarea>
+                        <!--Submit button-->
+                        <button type="submit" id="submit-button">SUBMIT</button>
+                    </form>
+                    <div id="error"></div>
+                </fieldset>
+            </form>
+        </div>
     </div>
+    <script src="assets/js/contact.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("Y02sBuxSvDZaq8r654");
+        })();
+    </script>
 </body>
 </html>
