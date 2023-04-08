@@ -7,7 +7,7 @@
     <!--Google Fonts and Font Awesome-->
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e0975b6566.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
     <title>BRAIN GAMES</title>
 </head>
 <body>
@@ -27,6 +27,20 @@
                 </li>
             </ul>
         </nav>
+    </div>
+    <div id="form-area">
+        <form id="contact-form">
+            <fieldset>
+                <legend id="form-header">Contact Us:</legend>
+                <label for="fname" id="fname-label">First Name:</label>
+                <input id="fname" name="first_name" type="text" class="text-input" required>
+                <label for="lname" id="lname-label">Last Name:</label>
+                <input id="lname" name="last_name" type="text" class="text-input" required>
+                <label for="email" id="email-label">Email Address:</label>
+                <input type="email" id="email" name="email_address" class="text-input" required>
+                <div id="error"></div>
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>

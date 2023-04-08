@@ -76,4 +76,3 @@ document.querySelector("#reset-board").addEventListener("click",  () => {
   })
   startGame();
 });
-
