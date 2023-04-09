@@ -97,13 +97,16 @@ a {
 /*404*/
 #error-404 {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 30px;
 }
 .header404 {
     font-size: 400%;
 }
 #error-404 i {
     font-size: 400%;
+}
+.content-404 {
+    padding-top: 30px;
 }
 .content-404 a{
     font-size: 150%;
