@@ -110,6 +110,7 @@ a {
     color: #000;
 }
 
+/*Media queries for multiple screen widths to keep layout of cards consistent across all devices*/
 @media screen and (min-width: 320px) and (max-width: 415px) {
     /*Logo and nav bar*/
     #header {
@@ -146,6 +147,7 @@ a {
 }
 
 @media screen and (min-width: 416px) and (max-width: 535px) {
+    /*Logo and nav bar*/
     #header {
         width: 100%;
         height: 120px;
@@ -180,6 +182,7 @@ a {
 }
 
 @media screen and (min-width: 536px) and (max-width: 669px) {
+    /*Logo and nav bar*/
     #header {
         width: 100%;
         height: 130px;
@@ -209,6 +212,76 @@ a {
     .game-card {
         height: 170px;
         width: 170px;
+        margin: 2px;
+    }
+}
+
+@media screen and (min-width: 670px) and (max-width: 762px) {
+    /*Logo and nav bar*/
+    #header {
+        width: 100%;
+        height: 130px;
+    }
+    #logo {
+        width: 100%;
+        font-size: 200%;
+        text-align: center;
+        padding-left: 0px;
+    }
+    #navbar {
+        width: 80%;
+    }
+    #navbar li {
+        list-style-type: none;
+        padding-top: 0px;
+        font-size: 80%;
+    }
+
+    /*Game area*/
+    .game-container {
+        width: 100%;
+        height: 330px;
+        padding-top: 20px;
+        justify-content: center;
+    }
+    .game-card {
+        height: 105px;
+        width: 105px;
+        margin: 2px;
+    }
+}
+
+@media screen and (min-width: 763px) and (max-width: 867px) {
+    /*Logo and nav bar*/
+    #header {
+        width: 100%;
+        height: 130px;
+    }
+    #logo {
+        width: 100%;
+        font-size: 200%;
+        text-align: center;
+        padding-left: 0px;
+    }
+    #navbar {
+        width: 80%;
+    }
+    #navbar li {
+        list-style-type: none;
+        padding-top: 0px;
+        font-size: 80%;
+    }
+
+    /*Game area*/
+    .game-container {
+        width: 100%;
+        height: 375px;
+        padding-top: 20px;
+        justify-content: center;
+    }
+    .game-card {
+        height: 120px;
+        width: 120px;
         margin: 2px;
     }
 }
