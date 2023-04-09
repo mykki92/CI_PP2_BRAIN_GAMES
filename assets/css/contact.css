@@ -72,6 +72,7 @@ fieldset {
     color: #000;
     height: 25px;
     margin: 5px 0 20px 0;
+    border: 2px solid #000;
 }
 #fname {
     width: 200px;
@@ -116,6 +117,7 @@ fieldset {
     top: 130px;
     width: 618px;
     height: 200px;
+    border: 2px solid #000;
 }
 #submit-button {
     position: absolute;
@@ -172,7 +174,7 @@ fieldset {
         width: 80%;
         height: 550px;
     }
-    /*text inputs and labels*/
+    /*Text inputs and labels*/
     #fname {
         width: 165px;
         left: 100px;
@@ -213,5 +215,135 @@ fieldset {
     #submit-button {
         left: 10px;
         top: 500px;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 750px) {
+    /*Logo and nav bar*/
+    #header {
+        width: 100%;
+        height: 110px;
+    }
+    #logo {
+        width: 100%;
+        font-size: 200%;
+        text-align: center;
+        padding-left: 0px;
+    }
+    #navbar {
+        width: 80%;
+    }
+    #navbar li {
+        list-style-type: none;
+        padding-top: 0px;
+        font-size: 90%;
+    }
+    /*Contact info*/
+    #contact {
+        width: 100%;
+    }
+    #form-info {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+    /*Form*/
+    #form-area {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 0px;
+        justify-content: center;
+    }
+    fieldset {
+        width: 80%;
+        height: 550px;
+    }
+    /*Text inputs and labels*/
+    #fname {
+        width: 260px;
+        left: 100px;
+        top: 20px;
+    }
+    #fname-label {
+        width: 90px;
+        left: 10px;
+        top: 30px;
+    }
+    #lname {
+        width: 260px;
+        left: 100px;
+        top: 70px;
+    }
+    #lname-label {
+        width: 100px;
+        left: 10px;
+        top: 80px;
+    }
+    #email {
+        width: 300px;
+        left: 60px;
+        top: 120px;
+    }
+    #email-label {
+        width: 100px;
+        left: 10px;
+        top: 130px;
+    }
+    /*Feedback text box and submit button*/
+    #feedback-box {
+        left: 10px;
+        top: 180px;
+        width: 353px;
+        height: 300px;
+    }
+    #submit-button {
+        left: 10px;
+        top: 500px;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 950px) {
+    /*Text inputs and labels*/
+    #fname {
+        width: 150px;
+        left: 100px;
+        top: 20px;
+    }
+    #fname-label {
+        width: 90px;
+        left: 10px;
+        top: 30px;
+    }
+    #lname {
+        width: 150px;
+        left: 360px;
+        top: 20px;
+    }
+    #lname-label {
+        width: 100px;
+        left: 270px;
+        top: 30px;
+    }
+    #email {
+        width: 450px;
+        left: 60px;
+        top: 70px;
+    }
+    #email-label {
+        width: 100px;
+        left: 10px;
+        top: 80px;
+    }
+    /*Feedback text box and submit button*/
+    #feedback-box {
+        left: 10px;
+        top: 130px;
+        width: 500px;
+        height: 200px;
+    }
+    #submit-button {
+        left: 10px;
+        top: 350px;
     }
 }
