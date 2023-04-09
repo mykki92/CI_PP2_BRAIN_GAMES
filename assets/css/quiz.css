@@ -42,7 +42,6 @@ a {
 }
 #quiz-container {
     width: 100%;
-    padding-left: 10px;
     padding-top: 10px;
 }
 #question-area {
@@ -122,10 +121,6 @@ a {
     }
     
     /*Quiz area*/
-    #quiz-container {
-        padding-left: 0px;
-        
-    }
     #question-area {
         width: 90%;
     }

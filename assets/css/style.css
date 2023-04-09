@@ -106,8 +106,9 @@ a {
     font-size: 400%;
 }
 .content-404 a{
-    font-size: 250%;
+    font-size: 150%;
     color: #000;
+    text-decoration: underline;
 }
 
 /*Media queries for multiple screen widths to keep layout of cards consistent across all devices*/
