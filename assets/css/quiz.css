@@ -11,7 +11,7 @@ body {
     background-color: #000;
     color: #fff;
 }
-#header h1 {
+#logo {
     float: left;
     padding-left: 10px;
 }
@@ -98,4 +98,35 @@ a {
 }
 .hide {
     display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    /*Logo and nav bar*/
+    #header {
+        width: 100%;
+        height: 110px;
+    }
+    #logo {
+        width: 100%;
+        font-size: 170%;
+        text-align: center;
+        padding-left: 0px;
+    }
+    #navbar {
+        width: 80%;
+    }
+    #navbar li {
+        list-style-type: none;
+        padding-top: 0px;
+        font-size: 90%;
+    }
+    
+    /*Quiz area*/
+    #quiz-container {
+        padding-left: 0px;
+        
+    }
+    #question-area {
+        width: 90%;
+    }
 }

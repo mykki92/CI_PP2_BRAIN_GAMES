@@ -99,13 +99,13 @@ a {
     text-align: center;
     padding-top: 100px;
 }
-#header404 {
-    font-size: 600%;
+.header404 {
+    font-size: 400%;
 }
 #error-404 i {
     font-size: 400%;
 }
-#content-404 {
+.content-404 a{
     font-size: 250%;
     color: #000;
 }
