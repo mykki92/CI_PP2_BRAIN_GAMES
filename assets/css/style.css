@@ -33,6 +33,10 @@ a {
 }
 
 /*Game area*/
+#game-intro {
+    padding-top: 20px;
+    padding-left: 10px;
+}
 #game-area {
     width: 100%;
     position: absolute;
@@ -40,7 +44,7 @@ a {
 .game-container {
     width: 960px;
     height: 490px;
-    padding-top: 10px;
+    padding-top: 80px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -80,6 +84,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 #reset-board {
     height: 25px;
