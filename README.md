@@ -1,108 +1,164 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Brain Games
+(Developer: Michael Roberts)
 
-Welcome mykki92,
+![Mockup image](docs/am-i-responsive.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Live webpage] (https://mykki92.github.io/CI_PP2_BRAIN_GAMES/)
+## Table of Contents
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+1. [Project Goals](#project-goals)
+    1. [User Goals](#user-goals)
+    2. [Site Owner Goals](#site-owner-goals)
+2. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Requrements and Expectations](#user-requrements-and-expectations)
+    3. [User Stories](#user-stories)
+3. [Design](#design)
+    1. [Design Choices](#design-choices)
+    2. [Colour](#colours)
+    3. [Fonts](#fonts)
+    4. [Structure](#structure)
+    5. [Wireframes](#wireframes)
+4. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks & Tools](#frameworks-&-tools)
+5. [Features](#features)
+6. [Testing](#validation)
+    1. [HTML Validation](#HTML-validation)
+    2. [CSS Validation](#CSS-validation)
+    3. [Accessibility](#accessibility)
+    4. [Performance](#performance)
+    5. [Device testing](#device-testing)
+    6. [Browser compatibility](#browser-compatability)
+    7. [Testing user stories](#testing-user-stories)
+8. [Bugs](#Bugs)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
-## Gitpod Reminders
+## Project Goals 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### User Goals
+### Site Owner Goals
 
-`python3 -m http.server`
+## User Experience
 
-A blue button should appear to click: _Make Public_,
+### Target Audience
 
-Another blue button should appear to click: _Open Browser_.
+### User Requirements and Expectations
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User Stories
 
-A blue button should appear to click: _Make Public_,
+#### First-time User
 
-Another blue button should appear to click: _Open Browser_.
+#### Returning User
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Site Owner
 
-To log into the Heroku toolbelt CLI:
+## Design
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Design Choices
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Colour
 
-------
+### Fonts
 
-## Release History
+### Structure
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Wireframes
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<details><summary>Memory Game</summary>
+<img src="docs/wireframes/wireframes-memory-game.png">
+</details>
+<details><summary>Quiz</summary>
+<img src="docs/wireframes/wireframes-quiz.png">
+</details>
+<details><summary>Contact</summary>
+<img src="docs/wireframes/wireframes-contact.png">
+</details>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Technologies Used
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Languages
+- HTML
+- CSS
+- JavaScript
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Frameworks & Tools
+- Git
+- GitHub
+- Gitpod
+- TinyPNG
+- Balsamiq
+- Google Fonts
+- Font Awsome
+- Favicon
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Features
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Validation
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### HTML Validation
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### CSS Validation
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### JavaScript Validation
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Accessibility
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Performance
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Device testing
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Browser compatability
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Testing user stories
 
-------
+## Bugs
 
-## FAQ about the uptime script
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| Memory game cards cannot be flipped again after game has been won and restarted | Enclose game variables and functions inside a function called startGame() and call that function when restart button is pressed |
 
-**Why have you added this script?**
+## Deployment
+The website was deployed using GitHub Pages by following these steps:
+1. In the GitHub repository navigate to the Settings tab
+2. On the left hand menu select Pages
+3. For the source select Branch: master
+4. After the webpage refreshes automaticaly you will see a ribbon on the top saying: "Your site is published at https://mykki92.github.io/CI_PP2_BRAIN_GAMES/"
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+You can fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
 
-**How will this affect me?**
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Credits
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Media
+Images courtesy of Shutterstock.com:
+- [bear](assets/images/bear.jpg)
+- [card-back](assets/images/card-back.jpg)
+- [dolphin](assets/images/dolphin.jpg)
+- [elephant](assets/images/elephant.jpg)
+- [gorilla](assets/images/gorilla.jpg)
+- [kitten](assets/images/kitten.jpg)
+- [red-panda](assets/images/red-panda.jpg)
+- [tiger](assets/images/tiger.jpg)
+- [wolf](assets/images/wolf.jpg)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Images courtesy of Pexels.com:
+- [penguins](assets/images/penguins.jpg)
 
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Acknowledgements
+- My Code Institute Mentor Mo Shami for his guidance and advice.
+- Code Institute learning modules and tutor support.
+- W3 Schools
+- GitHub tutorials
