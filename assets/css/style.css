@@ -36,7 +36,9 @@ a {
 #game-intro {
     padding-top: 20px;
     padding-left: 10px;
-    font-size: 120px;
+}
+#game-intro p {
+    font-size: 120%;
 }
 #game-area {
     width: 100%;
