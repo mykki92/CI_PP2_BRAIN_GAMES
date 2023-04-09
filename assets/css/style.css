@@ -100,14 +100,12 @@ a {
     padding-top: 100px;
 }
 #header404 {
-    font-size: 400%;
+    font-size: 600%;
 }
 #error-404 i {
     font-size: 400%;
 }
 #content-404 {
     font-size: 250%;
-}
-#content-404 a {
     color: #000;
 }
