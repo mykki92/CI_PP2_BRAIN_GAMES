@@ -10,7 +10,7 @@ body {
     background-color: #000;
     color: #fff;
 }
-#header h1 {
+#logo {
     float: left;
     padding-left: 10px;
 }
@@ -108,4 +108,39 @@ a {
 #content-404 {
     font-size: 250%;
     color: #000;
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+    /*Logo and nav bar*/
+    #header {
+        width: 100%;
+        height: 110px;
+    }
+    #logo {
+        width: 100%;
+        font-size: 170%;
+        text-align: center;
+        padding-left: 0px;
+    }
+    #navbar {
+        width: 80%;
+    }
+    #navbar li {
+        list-style-type: none;
+        padding-top: 0px;
+        font-size: 80%;
+    }
+
+    /*Game area*/
+    .game-container {
+        width: 100%;
+        height: 620px;
+        padding-top: 20px;
+        justify-content: center;
+    }
+    .game-card {
+        height: 100px;
+        width: 100px;
+        margin: 2px;
+    }
 }
