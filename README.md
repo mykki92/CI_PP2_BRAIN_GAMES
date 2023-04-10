@@ -5,7 +5,8 @@
 
 [Live webpage] (https://mykki92.github.io/CI_PP2_BRAIN_GAMES/)
 ## Table of Contents
-
+#
+0. [Introduction](#introduction)
 1. [Project Goals](#project-goals)
     1. [User Goals](#user-goals)
     2. [Site Owner Goals](#site-owner-goals)
@@ -36,34 +37,83 @@
 10. [Credits](#credits)
 11. [Acknowledgements](#acknowledgements)
 
+## Introduction
+Brain Games is a website that features logic, memory and knowledge based JavaScript games, targeted to users that want quick and fun games to play that will keep their mind active during a break at work for example. It is designed to be an interactive platform on which more and more games will be added over time to keep users interested and engaged.
+
 ## Project Goals 
 
+The goal of this project is to create an interactive game platform featuring JavaScript games that are clearly presented, user friendly, engaging and challenging.
+
 ### User Goals
+
+- To play games that are engaging and challenging
+- Be able to learn something while playing 
+
 ### Site Owner Goals
+
+- Develop an expandable Javascript game platform
+- Provide fast and engaging content to users
+- Make design simple and user-friendly
+- Make games responsive and accessible
+- Gain feedback from users
 
 ## User Experience
 
 ### Target Audience
 
+- Users that want to be entertained and challenged
+- Users with an interest in general knowledge
+- Users with an interest in logic/memory based games
+
+ 
 ### User Requirements and Expectations
+
+- Simple and attractive design
+- Clear and simple instructions where necessary
+- User friendly navigation and accessible features
+- Responsiveness on range of devices and screen sizes
+- Feedback from page to be clear and brief
+- Means of contacting the developer
+- Having an option to leave feedback
 
 ### User Stories
 
 #### First-time User
+0. As a first time user, I want to understand what the game is about
+1. As a first time user, I want the game rules and controls to be easily understandable
+2. As a first time user, I want the game to be engaging and interactive
+3. As a first time user, I want the game to be challenging
+4. As a first time user, I want to be able to see my progress through the game 
+5. As a first time user, I want the game to be responsive across different devices and screen sizes 
 
 #### Returning User
+6. As a returning user, I want to learn something playing the game
+7. As a returning user, I want to be able to restart the game when I finish
+8. As a returning user, I want to be able to leave feedback with the developer
+9. As a returning user, I want to know that my feedback has been sent
 
 #### Site Owner
+10. As the site owner, I want users to be able to interact with the site content with ease
+11. As the site owner, I want users to be engaged and want to return to the site
+12. As the site owner, I want users to feedback their experience with the site and any ideas for further development
 
 ## Design
+
+The site is designed to be an engaging and interactive game platform, with simple and accessible features
 
 ### Design Choices
 
 ### Colour
 
+Colour was kept to a minimum so as not to overload the screen when the user is playing the games. Using black text with a white background, contrast is kept to a minimum when the user is flipping the picture cards in the memory game. Color schemes for game buttons invert on hover so the user knows it is an interactive button.
+
 ### Fonts
 
+The chosen font for this site is Righteous from Google Fonts, chosen for its easy readability and playful tone. Arial was selected as the websafe font and Cursive as the fallback font.
+
 ### Structure
+
+The page is designed with a simple header featuring the logo icon, site name and navigation menu which is consistent across all pages. Below the header is a short section with an introduction to the game followed by a large game area that is the focus of the page, making both navigation of the pages and interaction with the games easily understandable and accessible.
 
 ### Wireframes
 
@@ -93,6 +143,8 @@
 - Google Fonts
 - Font Awsome
 - Favicon
+- EmailJS
+- AmIResponsive
 
 ## Features
 
@@ -109,8 +161,18 @@
 ### Performance
 
 ### Device testing
+The website was tested on the following devices:
+- Google Pixel 7
+- Samsung Galaxy A7 Lite Tab
+- HP Laptop 14
+- Apple iMac
 
 ### Browser compatability
+The website was tested on the following browsers:
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Safari
 
 ### Testing user stories
 
