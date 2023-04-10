@@ -142,11 +142,15 @@ a {
         padding-left: 0px;
     }
     #navbar {
-        width: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
     }
     #navbar li {
         list-style-type: none;
-        padding-top: 0px;
+        padding-top: 20px;
+        padding-right: 10px;
         font-size: 80%;
     }
 
@@ -177,11 +181,15 @@ a {
         padding-left: 0px;
     }
     #navbar {
-        width: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
     }
     #navbar li {
         list-style-type: none;
-        padding-top: 0px;
+        padding-top: 20px;
+        padding-right: 10px;
         font-size: 90%;
     }
 
@@ -212,12 +220,16 @@ a {
         padding-left: 0px;
     }
     #navbar {
-        width: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
     }
     #navbar li {
         list-style-type: none;
-        padding-top: 0px;
-        font-size: 90%;
+        padding-top: 20px;
+        padding-right: 10px;
+        font-size: 100%;
     }
 
     /*Game area*/
@@ -247,12 +259,16 @@ a {
         padding-left: 0px;
     }
     #navbar {
-        width: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
     }
     #navbar li {
         list-style-type: none;
-        padding-top: 0px;
-        font-size: 90%;
+        padding-top: 20px;
+        padding-right: 10px;
+        font-size: 110%;
     }
 
     /*Game area*/
@@ -282,12 +298,16 @@ a {
         padding-left: 0px;
     }
     #navbar {
-        width: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
     }
     #navbar li {
         list-style-type: none;
-        padding-top: 0px;
-        font-size: 100%;
+        padding-top: 20px;
+        padding-right: 10px;
+        font-size: 120%;
     }
 
     /*Game area*/
@@ -317,11 +337,15 @@ a {
         padding-left: 0px;
     }
     #navbar {
-        width: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
     }
     #navbar li {
         list-style-type: none;
-        padding-top: 0px;
+        padding-top: 20px;
+        padding-right: 10px;
         font-size: 120%;
     }
 
