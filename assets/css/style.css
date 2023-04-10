@@ -12,7 +12,12 @@ body {
 }
 #logo {
     float: left;
+    padding-top: 20px;
     padding-left: 10px;
+    margin: 0;
+}
+#navbar {
+    margin: 0;
 }
 #navbar li {
     float: right;
