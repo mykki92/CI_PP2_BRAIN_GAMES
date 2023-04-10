@@ -1,3 +1,5 @@
+const contactForm = document.getElementById("contact-form");
+
 // listen to the form submission
 document
 .getElementById("contact-form")
@@ -11,7 +13,8 @@ document
   emailjs.sendForm(serviceID, templateID, this).then(
     (response) => {
       console.log("SUCCESS!", response.status, response.text);
-      alert("SUCCESS!");
+      document.querySelector('#feedback-message').style.display="flex";
+      contactForm.reset();
     },
     (error) => {
       console.log("FAILED...", error);
@@ -20,8 +23,9 @@ document
   );
 });
 
-
-
+function refreshPage() {
+  window.location.reload();
+}
 
 
 

@@ -131,17 +131,15 @@ fieldset {
     left: 20px;
     top: 350px;
     border: 2px solid #000;
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
     font-family: "Righteous", cursive;
     font-size: 100%;
 }
-#submit {
+
+.feedback-message {
     background-color: #000;
     color: #fff;
-}
-.feedback-message {
-    background-color: #fff;
-    border: 2px solid #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,7 +147,7 @@ fieldset {
     text-align: center;
     width: 40%;
     max-width: 800px;
-    height: 20%;
+    height: 40%;
     position: absolute;
     z-index: 2000;
     top: 55%;
@@ -158,6 +156,15 @@ fieldset {
 }
 #feedback-message {
     display: none;
+}
+.feedback-message h2 {
+    padding-top: 10px;
+}
+#refresh {
+    background-color: #fff;
+    color: #000;
+    font-family: "Righteous", cursive;
+    font-size: 100%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 450px) {
