@@ -79,23 +79,21 @@ The goal of this project is to create an interactive game platform featuring Jav
 ### User Stories
 
 #### First-time User
-0. As a first time user, I want to understand what the game is about
-1. As a first time user, I want the game rules and controls to be easily understandable
-2. As a first time user, I want the game to be engaging and interactive
-3. As a first time user, I want the game to be challenging
-4. As a first time user, I want to be able to see my progress through the game 
-5. As a first time user, I want the game to be responsive across different devices and screen sizes 
+1. As a first time user, I want the site to be easy to navigate and the features to be clearly presented
+2. As a first time user, I want the game rules and controls to be easily understandable
+3. As a first time user, I want the game to be engaging and interactive
+4. As a first time user, I want the game to be challenging
+5. As a first time user, I want to be able to see my progress through the game 
 
 #### Returning User
 6. As a returning user, I want to learn something playing the game
-7. As a returning user, I want to be able to restart the game when I finish
-8. As a returning user, I want to be able to leave feedback with the developer
-9. As a returning user, I want to know that my feedback has been sent
+7. As a returning user, I want to be able to leave feedback with the developer
+8. As a returning user, I want to know that my feedback has been sent
 
 #### Site Owner
-10. As the site owner, I want users to be able to interact with the site content with ease
-11. As the site owner, I want users to be engaged and want to return to the site
-12. As the site owner, I want users to feedback their experience with the site and any ideas for further development
+9. As the site owner, I want users to be able to interact with the site content with ease
+10. As the site owner, I want users to be engaged and want to return to the site
+11. As the site owner, I want users to feedback their experience with the site and any ideas for further development
 
 ## Design
 
@@ -153,47 +151,47 @@ The page is designed with a simple header featuring the logo icon, site name and
 - The navbar is fully responsive and and includes links to the Memory Game, Quiz and Contact Us page.
 - It allows users to easily navigate the site.
 - The link for the active page is underlined.
-- User stories covered:
+- User stories covered: 1, 9
 
 ![Logo and Navigation Bar](docs/features/feature-logo-navbar.png)
 
 ### Memory Game
 - Interactive and engaging memory game where the user must flip the cards by clicking them to find the matches.
 - Introduced with a quote and some basic instructions for the game.
-- User stories covered:
+- User stories covered: 1, 2, 3, 4, 5, 10
 
 ![Memory Game](docs/features/feature-memory-game.png)
 
 ### Quiz
 - Quiz featuring ten history, geography and space based questions to test the users knowledge.
 - Introduced with a quote and some basic instructions for the quiz.
-- User stories covered:
+- User stories covered: 1, 2, 3, 4, 6, 10
 
 ![Quiz](docs/features/feature-quiz.png)
 
 ### Hover buttons and score tally
 - The answer buttons feature a hover function to change their color scheme so the user can easily identify their answer choice before clicking.
 - The quiz keeps a running score and question counter as you progress through the quiz.
-- User stories covered:
+- User stories covered: 2, 3, 5, 9
 
 ![Hover buttons and score tally](docs/features/feature-hover-buttons-score-tally.png)
 
 ### Final Score
 - Once the quiz has been completed, a congratulatory message will be displayed with the user's final score and a button to restart the quiz.
-- User stories covered:
+- User stories covered: 2, 3, 5, 9
 
 ![Final Score](docs/features/feature-final-score.png)
 
 ### Contact Form
 - Allows the user to leave feedback regarding their experience so far and suggestions for what they'd like to see on the site.
-- User stories covered:
+- User stories covered: 7, 10, 11
 
 ![Contact Form](docs/features/feature-contact-form.png)
 
 ### Feedback Message
 - Once the user has input their details and comments to the form and pressed the submit button, a message will appear informing the user that their feedback has been submitted.
 - A button labelled OK at the bottom of the message will refresh the page so the user can send another comment or navigate to other pages on the site.
-- User stories covered:
+- User stories covered: 8, 9, 11
 
 ![Feedback Message](docs/features/feature-feedback-message.png)
 
@@ -224,6 +222,91 @@ The website was tested on the following browsers:
 - Safari
 
 ### Testing user stories
+
+1. As a first time user, I want the site to be easy to navigate and the features to be clearly presented.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Logo and Navigation Bar | Find at the top of any page | Find navigation options for the site pages | Works as expected |
+| Memory Game | Navigate to the Memory Game page | Find the game ready to play with instructions | Works as expected |
+| Quiz | Navigate to the Quiz page | Find the quiz ready to play with instructions | Works as expected |
+
+2. As a first time user, I want the game rules and controls to be easily understandable.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Memory Game | Navigate to the Memory Game page | Find the game ready to play with instructions | Works as expected |
+| Quiz | Navigate to the Quiz page | Find the quiz ready to play with instructions | Works as expected |
+| Hover Buttons and Score Tally | Hover mouse over answer options in the quiz | Easily identify your chosen answer due to change in color scheme of the button | Works as expected |
+| Final Score | Complete all quiz questions | See a message appear showing you your final score with a button to restart the quiz | Works as expected |
+
+3. As a first time user, I want the game to be engaging and interactive.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Memory Game | Click on cards to flip and search for match | The game features attractive patterns and images on the game cards with a function to flip the cards with a mouse click| Works as expected |
+| Quiz | Answer questions in the quiz | The quiz features interesting questions in a simple and appealing layout | Works as expected |
+| Hover Buttons and Score Tally | Hover mouse over answer options in the quiz | Easily interact with the quiz and see your progress throughout | Works as expected |
+| Final Score | Complete all quiz questions | Shows your final score with a button to restart the quiz if you'd like to try and improve your score | Works as expected |
+
+4. As a first time user, I want the game to be challenging.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Memory Game | Click on cards to flip and search for match | The game tests the users memory with a deck made up of 18 cards that are placed randomly each time the board is refreshed | Works as expected |
+| Quiz | Answer questions in the quiz | The quiz features interesting questions on lesser known subjects to test and expand the user's knowledge | Works as expected |
+
+5. As a first time user, I want to be able to see my progress through the game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Memory Game | Click on cards to flip and search for match | When a pair of matching cards are found they will remain flipped until all matches are found and the deck is completely flipped | Works as expected |
+| Hover Buttons and Score Tally | Answer questions in the quiz | Shows the user their tally of correct answers out of the maximum of 10 | Works as expected |
+| Final Score | Complete all quiz questions | Shows the user their final score once the quiz is complete | Works as expected |
+
+6. As a returning user, I want to learn something playing the game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Memory Game | Click on cards to flip and search for match | This game will test and improve the user's memory skills | Works as expected |
+| Quiz | Answer questions in the quiz | This quiz will test and improve the user's knowledge on the given subjects | Works as expected |
+
+7. As a returning user, I want to be able to leave feedback with the developer.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact Form | Navigate to Contact Us page | Fill out your details and comments and submit your feedback | Works as expected |
+
+8. As a returning user, I want to know that my feedback has been sent.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Feedback Message | Submit your feedback | See a message appear confirming your feedback has been submitted | Works as expected |
+
+9. As the site owner, I want users to be able to interact with the site content with ease.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Logo and Navigation Bar | Find at the top of any page | Find navigation options for the site pages | Works as expected |
+| Hover Buttons and Score Tally | Hover mouse over answer options in the quiz | Easily interact with the quiz and see your progress throughout | Works as expected |
+| Final Score | Complete all quiz questions | Shows your final score with a button to restart the quiz if you'd like to try and improve your score | Works as expected |
+| Feedback Message | Submit your feedback | See a message appear confirming your feedback has been submitted | Works as expected |
+
+10. As the site owner, I want users to be engaged and want to return to the site.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Memory Game | Click on cards to flip and search for match | The game features attractive patterns and images on the game cards with a function to flip the cards with a mouse click| Works as expected |
+| Quiz | Answer questions in the quiz | The quiz features interesting questions in a simple and appealing layout | Works as expected |
+| Contact Form | Navigate to Contact Us page | User can send feedback to the developer to let them know if any features or games they'd like to see added to the site | Works as expected |
+
+
+11. As the site owner, I want users to feedback their experience with the site and any ideas for further development.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact Form | Navigate to Contact Us page | User can send feedback to the developer to let them know if any features or games they'd like to see added to the site | Works as expected |
+| Feedback Message | User submits feedback | User sees a message appear confirming their feedback has been submitted | Works as expected |
 
 ## Bugs
 
