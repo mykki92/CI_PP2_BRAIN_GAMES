@@ -148,6 +148,55 @@ The page is designed with a simple header featuring the logo icon, site name and
 
 ## Features
 
+### Logo and Navigation Bar
+- Features on all pages.
+- The navbar is fully responsive and and includes links to the Memory Game, Quiz and Contact Us page.
+- It allows users to easily navigate the site.
+- The link for the active page is underlined.
+- User stories covered:
+
+![Logo and Navigation Bar](docs/features/feature-logo-navbar.png)
+
+### Memory Game
+- Interactive and engaging memory game where the user must flip the cards by clicking them to find the matches.
+- Introduced with a quote and some basic instructions for the game.
+- User stories covered:
+
+![Memory Game](docs/features/feature-memory-game.png)
+
+### Quiz
+- Quiz featuring ten history, geography and space based questions to test the users knowledge.
+- Introduced with a quote and some basic instructions for the quiz.
+- User stories covered:
+
+![Quiz](docs/features/feature-quiz.png)
+
+### Hover buttons and score tally
+- The answer buttons feature a hover function to change their color scheme so the user can easily identify their answer choice before clicking.
+- The quiz keeps a running score and question counter as you progress through the quiz.
+- User stories covered:
+
+![Hover buttons and score tally](docs/features/feature-hover-buttons-score-tally.png)
+
+### Final Score
+- Once the quiz has been completed, a congratulatory message will be displayed with the user's final score and a button to restart the quiz.
+- User stories covered:
+
+![Final Score](docs/features/feature-final-score.png)
+
+### Contact Form
+- Allows the user to leave feedback regarding their experience so far and suggestions for what they'd like to see on the site.
+- User stories covered:
+
+![Contact Form](docs/features/feature-contact-form.png)
+
+### Feedback Message
+- Once the user has input their details and comments to the form and pressed the submit button, a message will appear informing the user that their feedback has been submitted.
+- A button labelled OK at the bottom of the message will refresh the page so the user can send another comment or navigate to other pages on the site.
+- User stories covered:
+
+![Feedback Message](docs/features/feature-feedback-message.png)
+
 ## Validation
 
 ### HTML Validation
