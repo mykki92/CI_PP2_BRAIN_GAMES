@@ -5,7 +5,7 @@ document
   event.preventDefault();
 
   const serviceID = "service_sg9ug7m";
-  const templateID = "template_7s18p3c";
+  const templateID = "template_gx0pa05";
 
   // send the email here
   emailjs.sendForm(serviceID, templateID, this).then(
@@ -19,6 +19,7 @@ document
     }
   );
 });
+
 
 
 

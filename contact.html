@@ -51,7 +51,7 @@
                         <!--Textbox-->
                         <textarea id="feedback-box" name="feedback" cols="10" rows="5" required></textarea>
                         <!--Submit button-->
-                        <input type="submit" value="SUBMIT" id="submit" class="btn-send btn-success" name="submit">
+                        <button class="btn btn-primary" name="submit" id="submit" onclick="sendEmail()">SUBMIT!</button>
                     </form>
                     <div id="error"></div>
                 </fieldset>
@@ -68,11 +68,11 @@
     </script>
     <script type="text/javascript">      
         (function () {
-            emailjs.init("Y02sBuxSvDZaq8r654");
+            emailjs.init("yb-oS0dlWXCg9oZej");
         })();
     </script>
     <script>
-        emailjs.sendForm('service_sg9ug7m', 'template_7s18p3c', "#contact-form")
+        emailjs.sendForm('service_sg9ug7m', 'template_gx0pa05', "#contact-form")
     </script>
 </body>
 </html>

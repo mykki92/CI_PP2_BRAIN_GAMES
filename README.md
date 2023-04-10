@@ -109,7 +109,7 @@ Colour was kept to a minimum so as not to overload the screen when the user is p
 
 ### Fonts
 
-The chosen font for this site is Righteous from Google Fonts, chosen for its easy readability and playful tone. Arial was selected as the websafe font and Cursive as the fallback font.
+The chosen font for this site is Righteous from Google Fonts, chosen for its easy readability and playful tone. Cursive was selected as the fallback font.
 
 ### Structure
 
