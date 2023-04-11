@@ -23,9 +23,6 @@ document
   );
 });
 
-function refreshPage() {
-  window.location.reload();
-}
 
 
 
