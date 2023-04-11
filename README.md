@@ -199,8 +199,14 @@ The page is designed with a simple header featuring the logo icon, site name and
 
 ### HTML Validation
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
+<details><summary>Memory Game</summary>
+<img src="docs/validation/validation-html-memory-game.png">
+</details>
 <details><summary>Quiz</summary>
 <img src="docs/validation/validation-html-quiz.png">
+</details>
+<details><summary>Contact Us</summary>
+<img src="docs/validation/validation-html-contact.png">
 </details>
 
 ### CSS Validation

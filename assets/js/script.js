@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const cards = document.querySelectorAll('.game-card');
 
 function startGame() {
