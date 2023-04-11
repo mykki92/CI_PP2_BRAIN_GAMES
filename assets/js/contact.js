@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const contactForm = document.getElementById("contact-form");
 
 // listen to the form submission
@@ -10,7 +11,7 @@ document
   const templateID = "template_gx0pa05";
 
   // send the email here
-  emailjs.sendForm("service_sg9ug7m", "template_gx0pa05", this).then(
+  emailjs.sendForm(serviceID, templateID, this).then(
     (response) => {
       console.log("SUCCESS!", response.status, response.text);
       document.querySelector('#feedback-message').style.display="flex";
@@ -22,7 +23,6 @@ document
     }
   );
 });
-
 
 
 

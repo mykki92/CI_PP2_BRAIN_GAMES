@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const playerScore = document.getElementById('player-score');
 const questionText = document.getElementById('question-text');
 const answerButtonA = document.getElementById('a');
@@ -237,7 +238,7 @@ function next() {
         } else {
             submit();
         }
-    }
+    };
 }
 
 // submits all answers, hides questions and quiz buttons and returns a message with the player score

@@ -198,7 +198,7 @@ The page is designed with a simple header featuring the logo icon, site name and
 ## Validation
 
 ### HTML Validation
-The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors or warnings to show.
 <details><summary>Memory Game</summary>
 <img src="docs/validation/validation-html-memory-game.png">
 </details>
@@ -219,6 +219,16 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 </details>
 
 ### JavaScript Validation
+The JSHint Validation Service was used to validate the JavaScript of the website. All pages pass with no errors or warnings to show.
+<details><summary>Memory Game</summary>
+<img src="docs/validation/validation-js-memory-game.png">
+</details>
+<details><summary>Quiz</summary>
+<img src="docs/validation/validation-js-quiz.png">
+</details>
+<details><summary>Contact Us</summary>
+<img src="docs/validation/validation-js-contact.png">
+</details>
 
 ### Accessibility
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
