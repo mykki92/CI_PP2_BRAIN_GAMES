@@ -101,7 +101,7 @@ let questions = [
             {option:"D: Rigil Kentaurus", answer:false}
         ]
     },
-]
+];
 
 // event listeners for control buttons
 restartButton.addEventListener('click', restart);
@@ -124,7 +124,7 @@ function startQuiz() {
         } else {
             submit();
         }
-    }
+    };
     answerButtonB.innerHTML = questions[currentQuestion].answers[1].option;
     answerButtonB.onclick = () => {
         let num = 1;
@@ -139,7 +139,7 @@ function startQuiz() {
         } else {
             submit();
         }
-    }
+    };
     answerButtonC.innerHTML = questions[currentQuestion].answers[2].option;
     answerButtonC.onclick = () => {
         let num = 2;
@@ -155,7 +155,7 @@ function startQuiz() {
             submit();
         }
         
-    }
+    };
     answerButtonD.innerHTML = questions[currentQuestion].answers[3].option;
     answerButtonD.onclick = () => {
         let num = 3;
@@ -170,7 +170,7 @@ function startQuiz() {
         } else {
             submit();
         }
-    }
+    };
 }
 startQuiz();
 
@@ -192,7 +192,7 @@ function next() {
         } else {
             submit();
         }
-    }
+    };
     answerButtonB.innerHTML = questions[currentQuestion].answers[1].option;
     answerButtonB.onclick = () => {
         let num = 1;
@@ -207,7 +207,7 @@ function next() {
         } else {
             submit();
         }
-    }
+    };
     answerButtonC.innerHTML = questions[currentQuestion].answers[2].option;
     answerButtonC.onclick = () => {
         let num = 2;
@@ -222,7 +222,7 @@ function next() {
         } else {
             submit();
         }
-    }
+    };
     answerButtonD.innerHTML = questions[currentQuestion].answers[3].option;
     answerButtonD.onclick = () => {
         let num = 3;

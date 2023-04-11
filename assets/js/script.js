@@ -73,6 +73,6 @@ startGame();
 document.querySelector("#reset-board").addEventListener("click",  () => {
   cards.forEach(card => {
       card.classList.remove("flip");
-  })
+  });
   startGame();
 });
