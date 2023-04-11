@@ -10,7 +10,7 @@ document
   const templateID = "template_gx0pa05";
 
   // send the email here
-  emailjs.sendForm(serviceID, templateID, this).then(
+  emailjs.sendForm("service_sg9ug7m", "template_gx0pa05", this).then(
     (response) => {
       console.log("SUCCESS!", response.status, response.text);
       document.querySelector('#feedback-message').style.display="flex";
