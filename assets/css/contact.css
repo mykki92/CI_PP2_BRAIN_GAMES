@@ -52,6 +52,9 @@ a {
     text-align: center;
     padding-top: 80px;
 }
+#contact-logo {
+    font-size: 250%;
+}
 /*Contact form*/
 #form-area {
     vertical-align: top;
